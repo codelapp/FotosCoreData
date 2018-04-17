@@ -1,4 +1,5 @@
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
@@ -11,6 +12,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func btnGuardar(_ sender: UIButton) {
+        let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let imagenEntity = NSEntityDescription.entity(forEntityName: "Imagenes", in: contexto)
+        let newImage = NSManagedObject(entity: imagenEntity!, insertInto: contexto)
+        newImage.setValue(txtNombre.text, forKey: "nombre")
+        
+        if let imagen = imagen.image {
+            let imagenFinal = UIImagePNGRepresentation(imagen) as NSData?
+            newImage.setValue(imagenFinal, forKey: "imagen")
+        }
+        
+        do {
+            try contexto.save()
+            print("guardado")
+        } catch let error as Error {
+            print(error)
+        }
     }
     
     @IBAction func btnCamara(_ sender: UIBarButtonItem) {

@@ -13,6 +13,7 @@
 		EA35F0F02086520800C51D85 /* FotosCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA35F0EE2086520800C51D85 /* FotosCoreData.xcdatamodeld */; };
 		EA35F0F22086520E00C51D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA35F0F12086520E00C51D85 /* Assets.xcassets */; };
 		EA35F0F52086520E00C51D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA35F0F32086520E00C51D85 /* LaunchScreen.storyboard */; };
+		EA35F0FD20865A1300C51D85 /* ImagenesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35F0FC20865A1300C51D85 /* ImagenesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA35F0F12086520E00C51D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA35F0F42086520E00C51D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA35F0F62086520E00C51D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA35F0FC20865A1300C51D85 /* ImagenesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EA35F0E72086520800C51D85 /* AppDelegate.swift */,
 				EA35F0E92086520800C51D85 /* ViewController.swift */,
 				EA35F0EB2086520800C51D85 /* Main.storyboard */,
+				EA35F0FC20865A1300C51D85 /* ImagenesTableViewController.swift */,
 				EA35F0F12086520E00C51D85 /* Assets.xcassets */,
 				EA35F0F32086520E00C51D85 /* LaunchScreen.storyboard */,
 				EA35F0F62086520E00C51D85 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA35F0FD20865A1300C51D85 /* ImagenesTableViewController.swift in Sources */,
 				EA35F0EA2086520800C51D85 /* ViewController.swift in Sources */,
 				EA35F0E82086520800C51D85 /* AppDelegate.swift in Sources */,
 				EA35F0F02086520800C51D85 /* FotosCoreData.xcdatamodeld in Sources */,
